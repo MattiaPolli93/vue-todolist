@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Vue To-Do List</title>
+    <title>Vue.js List</title>
 </head>
 <body>
     <div id="app" class="wrapper">
@@ -21,9 +21,11 @@
         <div class="list flex">
             <ol v-if="usList.length > 0" class="flex">
                 <li v-for="(state, index) in usList"><a href="https://en.wikipedia.org/wiki/U.S._state">{{state}}</a>✔️<a href="#"><span @click="deleteItemList">❌</span></a></li>
-            </ol>
-
-            <input type="text" placeholder="Add the next 🇺🇸 State to the list!">
+            </ol>            
+        </div>
+        <div class="input-box flex">
+            <input type="text" placeholder=" Add the next State to the list! 🇺🇸" v-model="newItem" @keydown.13="addItemList">
+            <button @click="addItemList">Add</button>
 
         </div>
 

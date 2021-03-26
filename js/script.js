@@ -1,29 +1,26 @@
 "use-strict";
 
-// Create a To-Do List
+// Create a List
 
 const app = new Vue(
     {
         el: "#app",
         data: {
-            newItemList: "",
+            newItem: "",
             usList: [
                 "Alabama",
-                "Alaska",
-                "Arizona",
-                "Arkansas",
-                "California",
-                "Colorado",
-                "Connecticut",
-                "Delaware",
-                "Florida",
-                "Georgia"
             ],
         },
         methods: {
             deleteItemList: function(itemList) {
                 this.usList.splice(itemList, 1);
-            },            
+            },
+            addItemList: function() {
+                if (this.newItem !== "") {
+                    this.usList.push(this.newItem);
+                    this.newItem = "";
+                }
+            }            
         } 
     }
 );

@@ -10,39 +10,66 @@
 .wrapper {
     font-family: 'Averia Serif Libre', cursive;
     height: 100vh;
+    background-image: url("https://wallsdesk.com/wp-content/uploads/2016/10/American-Flag-Wallpaper-.png");
 }
 
+/* Title */
 .title {
     height: 80px;
     text-align: center;
-    margin-top: 10px;
+    color: #fff;
 }
 
+/* List */
 .list {
-    flex-direction: column;
-    justify-content: space-between;
-    height: calc(100vh - 80px);
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    height: calc(100vh - 230px);
+    overflow-y: auto;
+    background-image: linear-gradient(to bottom right, #f7543f , #a82114, #675f99, #363159);
 }
 
 .list ol {
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
-    list-style: none;
-    margin: 20px 15px 0;
+    /* list-style: none; */
 }
 
 .list ol li {
     margin: 5px 40px 0 0;
-    font-size: 25px;
+    font-size: 40px;
     font-style: italic;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .list ol li a {
     text-decoration: none;
-    color: #1216f0;
+    color: #faf1f1;
 }
 
-.list input {
-    margin-bottom: 50px;
+/* Input */
+.input-box {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;    
+}
+
+.input-box input {
+    width: 70%;
+    height: 10vh;
+    font-size: 40px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #001574;
+    border: none;
+}
+
+.input-box input::placeholder {
+}
+
+.input-box button {
+    cursor: pointer;
 }
