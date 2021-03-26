@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .flex {
     display: flex;
 }
@@ -42,7 +43,6 @@
 }
 
 .list ol li {
-    margin: 5px 40px 0 0;
     font-size: 40px;
     font-style: italic;
     font-weight: 800;
