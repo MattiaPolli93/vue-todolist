@@ -8,7 +8,7 @@ const app = new Vue(
         data: {
             newItem: "",
             usList: [
-                "Alabama"  
+                "Alabama"
             ]
         },
         methods: {
@@ -20,7 +20,8 @@ const app = new Vue(
                     this.usList.push(this.newItem);
                     this.newItem = "";
                 }
-            }            
+            }
         } 
     }
 );
+

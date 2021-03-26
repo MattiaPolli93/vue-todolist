@@ -20,7 +20,7 @@
         </div>
         <div class="list flex">
             <ol v-if="usList.length > 0" class="flex">
-                <li v-for="(state, index) in usList"><a href="https://en.wikipedia.org/wiki/U.S._state">{{state}}</a>✔️<a href="#"><span @click="deleteItemList">❌</span></a></li>
+                <li v-for="(state, index) in usList"><a href="https://en.wikipedia.org/wiki/U.S._state">{{index + 1}} &#8594; {{state}}</a> ✔️<a href="#"><span @click="deleteItemList">❌</span></a></li>
             </ol>            
         </div>
         <div class="input-box flex">
