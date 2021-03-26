@@ -3,7 +3,46 @@
     padding: 0;
     box-sizing: border-box;
 }
+.flex {
+    display: flex;
+}
 
 .wrapper {
     font-family: 'Averia Serif Libre', cursive;
+    height: 100vh;
+}
+
+.title {
+    height: 80px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.list {
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 80px);
+}
+
+.list ol {
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 20px 15px 0;
+}
+
+.list ol li {
+    margin: 5px 40px 0 0;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.list ol li a {
+    text-decoration: none;
+    color: #1216f0;
+}
+
+.list input {
+    margin-bottom: 50px;
 }

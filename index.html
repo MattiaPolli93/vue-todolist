@@ -15,7 +15,18 @@
 </head>
 <body>
     <div id="app" class="wrapper">
-        
+        <div class="title">
+            <h1>Can you complete the list? Are you up for the challenge? Name all the 50 <em>United States of America</em> 🇺🇸 in alphabetical order!</h1>
+        </div>
+        <div class="list flex">
+            <ol v-if="usList.length > 0" class="flex">
+                <li v-for="(state, index) in usList"><a href="https://en.wikipedia.org/wiki/U.S._state">{{state}}</a>✔️<a href="#"><span @click="deleteItemList">❌</span></a></li>
+            </ol>
+
+            <input type="text" placeholder="Add the next 🇺🇸 State to the list!">
+
+        </div>
+
     </div>
     
     <!-- JS -->
