@@ -1,3 +1,4 @@
+/* Properties */
 * {
     margin: 0;
     padding: 0;
@@ -15,9 +16,12 @@
 
 /* Title */
 .title {
-    height: 80px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    height: 100px;
     color: #fff;
+    padding: 0 80px;
 }
 
 /* List */
@@ -25,7 +29,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    height: calc(100vh - 230px);
+    height: calc(100vh - 250px);
     overflow-y: auto;
     background-image: linear-gradient(to bottom right, #f7543f , #a82114, #675f99, #363159);
 }
@@ -34,7 +38,7 @@
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    /* list-style: none; */
+    list-style: none;
 }
 
 .list ol li {
@@ -62,14 +66,21 @@
     height: 10vh;
     font-size: 40px;
     font-weight: 600;
-    color: #ffffff;
+    color: #fff;
     background-color: #001574;
     border: none;
 }
 
-.input-box input::placeholder {
-}
-
+/* Button */
 .input-box button {
+    width: 10%;
+    height: 40px;
+    border: none;
+    color: #00008b;
+    background-color: #1351d6;
+    border-radius: 5%;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
     cursor: pointer;
 }

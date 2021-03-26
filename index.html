@@ -15,7 +15,7 @@
 </head>
 <body>
     <div id="app" class="wrapper">
-        <div class="title">
+        <div class="title flex">
             <h1>Can you complete the list? Are you up for the challenge? Name all the 50 <em>United States of America</em> 🇺🇸 in alphabetical order!</h1>
         </div>
         <div class="list flex">
@@ -26,9 +26,7 @@
         <div class="input-box flex">
             <input type="text" placeholder=" Add the next State to the list! 🇺🇸" v-model="newItem" @keydown.13="addItemList">
             <button @click="addItemList">Add</button>
-
         </div>
-
     </div>
     
     <!-- JS -->

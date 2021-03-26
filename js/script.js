@@ -8,8 +8,8 @@ const app = new Vue(
         data: {
             newItem: "",
             usList: [
-                "Alabama",
-            ],
+                "Alabama"  
+            ]
         },
         methods: {
             deleteItemList: function(itemList) {
